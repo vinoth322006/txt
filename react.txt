@@ -1,0 +1,42 @@
+const WelcomeCard = () => {
+  const cardStyle = {
+    border: '1px solid #ccc',
+    borderRadius: '8px',
+    padding: '20px',
+    maxWidth: '400px',
+    margin: '20px auto',
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+    textAlign: 'center',
+    fontFamily: 'Arial, sans-serif',
+  };
+
+  const titleStyle = {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    color: '#333',
+  };
+
+  const messageStyle = {
+    fontSize: '16px',
+    color: '#555',
+    margin: '10px 0',
+  };
+
+  const closingStyle = {
+    fontSize: '14px',
+    color: '#777',
+    fontStyle: 'italic',
+  };
+
+  return (
+    <div style={cardStyle}>
+      <h2 style={titleStyle}>Welcome to Our App!</h2>
+      <p style={messageStyle}>
+        We're glad you're here. Explore and enjoy!
+      </p>
+      <p style={closingStyle}>Your App Team</p>
+    </div>
+  );
+};
+
+export default WelcomeCard;
